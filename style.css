@@ -1,0 +1,188 @@
+html {
+    font-size: 10px;
+    color: #333;
+}
+
+body {
+    background: #e8ecf0 url(i/denim2.png) no-repeat fixed 90% 80%;
+}
+
+body::after {
+    position: fixed;
+    left: 8%;
+    top: 4%;
+    content: "ST. 003";
+    font-size: 50rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    -webkit-mask-image: url(i/denim-mask2.png);
+    opacity: 0.15;
+    line-height: 53rem;
+    pointer-events: none;   /* needed so that pseudo element wouldn't block the contents from being interacted with */
+}
+
+
+
+a:link {
+    color: #a28351;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.4s linear;
+}
+
+
+a::after {
+    content: "";
+    border-top: 0.1em solid #a2835100;
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: -0.25em;
+    transition: bottom 0.4s linear,
+                        border-top 0.4s linear;
+}
+
+a:hover {
+    color: black;
+}
+
+a:hover::after {
+    border-top: 0.1em solid #a28351;
+    bottom: -0.1em;
+}
+
+a:focus {
+    color: black;
+}
+
+a:focus::after {
+    border-top: 0.1em solid #a28351;
+    bottom: -0.1em;
+}
+
+.intro, .main {
+    text-align: right;
+    margin: 0 30%;
+}
+
+.intro {
+    margin-top: 15%;
+}
+
+.summary, .preamble, .supporting {
+    font-size: 1.8em;
+}
+
+h1 {
+    font-size: 0;   /*hide text*/
+ 
+}   
+
+/*alternative text*/
+h1::before {
+    content: "MADE LOCALLY";    
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgba(0.3, 0.3, 0.3, 0.3)
+}
+
+h2 {
+    font-size: 0;
+    margin-bottom: 10rem;
+}  
+
+h2::before {
+    content: "CSS ZEN GARMENTS";
+    font-size: 4.2rem;
+    font-weight: 900;
+    color: #182e4f;
+}
+
+h2::after {
+    display: inline-block;
+    width: 8em;
+    position: absolute;
+    left: 75%;
+    content: "IMPECCABLE QUALITY";
+    font-size: 1.85rem;
+    font-weight: 900;
+    color: #182e4f90;
+    text-align: left;
+}
+
+.summary {
+    text-transform: uppercase;    
+}
+
+.summary::after {
+    content: url(i/sep.png);
+}
+
+h3 {
+    padding-left: 110%;
+    text-align: left;
+    margin-top: 14%;
+    margin-right: -38%;
+    font-size: 0;
+}
+
+p {
+    margin-bottom: 35px;
+    font-size: 1.95rem;
+    line-height: 1.5em;
+}
+
+p:nth-last-child(1) {
+    margin-bottom: 100px;
+}
+
+h3 + p {
+    margin-top: -3%;
+}
+
+h3::before {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    word-wrap: normal;
+}
+
+.preamble > h3::before {
+    content: "a fashion-forward future";
+}
+
+.explanation > h3::before {
+    content: "see yourself in a different way";
+}
+
+.participation > h3::before {
+    content: "get into a brand new pair";
+}
+
+.benefits > h3::before {
+    content: "look great... and feel great too!";
+}
+
+.requirements > h3::before {
+    content: "\"one size fits\" all be damn!";
+}
+
+
+abbr {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.summary > p:nth-child(2) {
+    font-size: 0;
+}
+
+.summary > p > a:nth-child(1)::before {
+    content: "";
+    display: inline-block;
+    background: url(s/czg.svg);
+    margin-top: 0%;
+    background-position-x: -277;
+    width: 190px;
+    height: 31px;
+    
+}
