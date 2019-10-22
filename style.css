@@ -391,3 +391,61 @@ a:focus::after {
     border-top: 0.1em solid #a28351;
     bottom: -0.1em;
 }
+
+/*****************************************
+Design Selection Section
+*****************************************/
+
+.design-selection {
+  position: absolute;
+  top: 27em;
+  left: 6em;
+}
+
+.design-selection h3 {
+  visibility: hidden;
+}
+
+.design-selection h3::after {
+  content: "washes & \Astyles";
+  white-space: pre;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  display: block;
+  visibility: visible;
+  background: no-repeat url("i/waves.png") 0 90%;
+  padding-bottom: 2.2em;
+}
+
+.design-selection ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.design-selection li {
+  font-size: 1.1em;
+  margin: 2.5em 0;
+}
+
+.design-selection li > a:nth-child(1) {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.35em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.design-selection li > a:nth-child(1)::after {
+  display: none;
+}
+
+.design-selection li > a:nth-child(1):hover {
+  font-style: italic;
+}
+
+.design-selection li > a:nth-child(2) {
+  color: #7989a3;
+}
+
+.design-selection li > a:nth-child(2):hover {
+  color: #000000;
