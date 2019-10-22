@@ -177,7 +177,7 @@ abbr {
 .summary > p:nth-child(2) {
     font-size: 2rem;
     color: transparent;
-    //user-select: none;
+    user-select: none;
 }
 
 .summary > p:nth-child(2)::before {
