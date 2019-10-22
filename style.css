@@ -449,3 +449,58 @@ Design Selection Section
 
 .design-selection li > a:nth-child(2):hover {
   color: #000000;
+}
+
+/*****************************************
+Design Archives Section
+*****************************************/
+
+.design-archives {
+  position: absolute;
+  top: 90em;
+  left: 6em;
+}
+
+.design-archives ul {
+  list-style: none;
+  padding: 0 0;
+}
+
+.design-archives ul > li {
+  display: inline-block;
+}
+
+.design-archives ul > li:nth-child(1) {
+  margin-right: 3em;
+}
+
+.design-archives a {
+  font-size: 0;
+  display: block;
+}
+
+.archives {
+  display: none;
+}
+
+.next a {
+  background: url("s/czg.svg") no-repeat 10px -56px;
+  width: 43px;
+  height: 37px;
+  margin-right: 2em;
+}
+
+.next a:hover {
+  background-position: 10px -138px;
+}
+
+.viewall a {
+  background: url("s/czg.svg") no-repeat -56px -55px;
+  width: 39px;
+  height: 39px;
+  margin-right: -2em;
+}
+
+.viewall a:hover {
+  background-position: -56px -137px;
+}
