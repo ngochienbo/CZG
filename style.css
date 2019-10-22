@@ -232,6 +232,7 @@ abbr {
     position: absolute;
     right: 155%;
     bottom: -2px;
+    pointer-events: none;   /*needed so that hover effect on anchor wouldn't trigger*/
 }
 
 .summary > p > a:nth-child(1)::after {
