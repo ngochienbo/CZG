@@ -573,7 +573,7 @@ Zen Resources Section
 
 .zen-resources {
   margin: 6% auto;
-  width: 550px;
+  width: 90%;
 }
 
 /* Tiny horizontall divider */
@@ -590,6 +590,7 @@ Zen Resources Section
 .zen-resources ul {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 /* Align list items horizontally */
@@ -597,6 +598,10 @@ Zen Resources Section
 .zen-resources ul > li {
   display: inline-block;
   margin-left: 4em;
+}
+
+.zen-resources ul > li:first-child {
+  margin-left: 0;
 }
 
 .zen-resources a {
