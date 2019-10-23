@@ -451,6 +451,43 @@ Design Selection Section
   color: #000000;
 }
 
+/* Media queries */
+
+@media (max-width: 1130px) {
+
+  .design-selection {
+    position: static;
+    margin: 9% auto 0;
+    width: 90%;
+  }
+
+  .design-selection ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  .design-selection h3::after {
+    padding: 2.2em 0 0;
+    text-align: center;
+    background-position: center 0;
+  }
+
+  .design-selection li {
+    flex: 1 1 25%;
+    margin: 0 0 3em;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .design-selection li {
+    flex: 1 1 50%;
+    margin: 0 0 3em;
+  }
+}
+
 /*****************************************
 Design Archives Section
 *****************************************/
