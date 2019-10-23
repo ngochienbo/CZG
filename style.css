@@ -542,6 +542,31 @@ Design Archives Section
   background-position: -56px -137px;
 }
 
+/* Media queries */
+
+@media (max-width: 1130px) {
+
+  .design-archives {
+    position: relative;
+    height: 5em;
+    top: 0;
+    left: 0;
+  }
+
+  .design-archives ul {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .design-archives ul > li:nth-child(1) {
+    margin-right: 6em;
+  }
+}
+
 /*****************************************
 Zen Resources Section
 *****************************************/
