@@ -436,7 +436,7 @@ Design Selection Section
   content: "washes & \Astyles";
   white-space: pre;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   display: block;
   visibility: visible;
   background: no-repeat url("i/waves.png") 0 90%;
@@ -475,6 +475,43 @@ Design Selection Section
 
 .design-selection li > a:nth-child(2):hover {
   color: #000000;
+}
+
+/* Media queries */
+
+@media (max-width: 1130px) {
+
+  .design-selection {
+    position: static;
+    margin: 9% auto 0;
+    width: 90%;
+  }
+
+  .design-selection ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  .design-selection h3::after {
+    padding: 2.2em 0 0;
+    text-align: center;
+    background-position: center 0;
+  }
+
+  .design-selection li {
+    flex: 1 1 25%;
+    margin: 0 0 3em;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .design-selection li {
+    flex: 1 1 50%;
+    margin: 0 0 3em;
+  }
 }
 
 /*****************************************
@@ -531,13 +568,38 @@ Design Archives Section
   background-position: -56px -137px;
 }
 
+/* Media queries */
+
+@media (max-width: 1130px) {
+
+  .design-archives {
+    position: relative;
+    height: 5em;
+    top: 0;
+    left: 0;
+  }
+
+  .design-archives ul {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .design-archives ul > li:nth-child(1) {
+    margin-right: 6em;
+  }
+}
+
 /*****************************************
 Zen Resources Section
 *****************************************/
 
 .zen-resources {
   margin: 6% auto;
-  width: 550px;
+  width: 90%;
 }
 
 /* Tiny horizontall divider */
@@ -554,6 +616,7 @@ Zen Resources Section
 .zen-resources ul {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 /* Align list items horizontally */
@@ -561,6 +624,10 @@ Zen Resources Section
 .zen-resources ul > li {
   display: inline-block;
   margin-left: 4em;
+}
+
+.zen-resources ul > li:first-child {
+  margin-left: 0;
 }
 
 .zen-resources a {
