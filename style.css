@@ -32,11 +32,8 @@ h2 {
     font-size: 0;
 }
 
-.preamble > h3,
-.explanation > h3,
-.participation > h3,
-.benefits > h3,
-.requirements > h3 {
+.intro > h3,
+.main > h3 {
     padding-left: 110%;
     text-align: left;
     margin-top: 14%;
