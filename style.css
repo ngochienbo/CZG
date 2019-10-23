@@ -504,3 +504,98 @@ Design Archives Section
 .viewall a:hover {
   background-position: -56px -137px;
 }
+
+/*****************************************
+Zen Resources Section
+*****************************************/
+
+.zen-resources {
+  margin: 6% auto;
+  width: 550px;
+}
+
+/* Tiny horizontall divider */
+
+.zen-resources::before {
+  content: "";
+  background-color: #d5d9dc;
+  display: block;
+  margin: 0 auto 2em;
+  width: 8em;
+  height: 0.4em;
+}
+
+.zen-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Align list items horizontally */
+
+.zen-resources ul > li {
+  display: inline-block;
+  margin-left: 4em;
+}
+
+.zen-resources a {
+  font-size: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+/* Hide default text */
+
+.resources {
+  display: none;
+}
+
+/* Set icon images for all the links, and the corresponding hover icon*/
+
+.view-css > a,
+.css-resources > a,
+.zen-faq > a,
+.zen-submit > a,
+.zen-translations > a {
+  background: url("s/czg.svg") no-repeat;
+}
+
+.view-css > a {
+  background-position: -502px 12px;
+}
+
+.view-css > a:hover {
+  background-position: -502px -78px;
+}
+
+.css-resources > a {
+  background-position: -150px -194px;
+}
+
+.css-resources > a:hover {
+  background-position: -150px -286px;
+}
+
+.zen-faq > a {
+  background-position: -265px -192px;
+}
+
+.zen-faq > a:hover {
+  background-position: -265px -284px;
+}
+
+.zen-submit > a {
+  background-position: -502px -194px;
+}
+
+.zen-submit > a:hover {
+  background-position: -502px -286px;
+}
+
+.zen-translations > a {
+  background-position: -380px -193px;
+}
+
+.zen-translations > a:hover {
+  background-position: -380px -285px;
+}
